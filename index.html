@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John the Ripper - Key Points</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      text-align: center;
+      background: linear-gradient(-45deg, #000000, #1a1a1a, #292929, #0d0d0d);
+      background-size: 400% 400%;
+      animation: backgroundAnimation 12s ease infinite;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    @keyframes backgroundAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 2rem;
+      color: #ffa726;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 165, 0, 0.6);
+      margin-bottom: 20px;
+    }
+
+    ul {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto 1rem;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    li::marker {
+      color: #ff9800;
+    }
+
+    .commands {
+      max-width: 600px;
+      margin: 0 auto 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+      font-family: monospace;
+      font-size: 1rem;
+      color: #ffcc00;
+    }
+
+    .warning {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      background: rgba(255, 0, 0, 0.1);
+      color: #ff5555;
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    }
+
+    #popup {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #ffcc00;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+      animation: movePopup 10s linear infinite alternate;
+    }
+
+    @keyframes movePopup {
+      0%   { top: 10%; left: 10%; }
+      25%  { top: 20%; left: 70%; }
+      50%  { top: 60%; left: 60%; }
+      75%  { top: 70%; left: 20%; }
+      100% { top: 30%; left: 30%; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🛠️ John the Ripper</h1>
+  <img src="JO.png" alt="John the Ripper Image">
+  <ul>
+    <li><strong>Password Cracker:</strong> Cracks passwords using brute-force and dictionary attacks.</li>
+    <li><strong>Cross-Platform:</strong> Works on Linux, Windows, and macOS.</li>
+    <li><strong>Supports Many Hashes:</strong> Handles formats like MD5, SHA, NTLM, etc.</li>
+    <li><strong>Highly Configurable:</strong> Allows custom rules and wordlists.</li>
+    <li><strong>Trusted by Pentesters:</strong> A go-to tool in cybersecurity.</li>
+  </ul>
+
+  <div class="commands">
+    <div><strong>🔧 Install John the Ripper:</strong></div>
+    <code>sudo apt-get install john</code>
+    <br><br>
+    <div><strong>🔍 Identify Hash Type:</strong></div>
+    <code>john --list=formats</code>
+    <br><br>
+    <em>Note: We can't provide all commands as it may violate the Information Technology Act and ethical guidelines.</em>
+  </div>
+
+  <div class="warning">
+    ⚠️ <strong>Legal Warning:</strong> Use John the Ripper only on systems you own or have explicit permission to test. Unauthorized access or cracking is illegal and punishable by law.
+  </div>
+
+  <div id="popup">💥 Credit - TU$HAR 💥</div>
+</body>
+</html>
